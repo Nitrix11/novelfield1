@@ -1,0 +1,150 @@
+.news-container {
+    background: url('../../assets/hero4.jpg') no-repeat center center;
+    background-size: cover;
+    /* padding: 50px 20px; */
+    height: 35vh;
+    position: relative;
+    color: white;
+    width: 80%; /* Set width to 80% */
+    margin: auto; /* Center the container */
+    margin-bottom: 70px;
+  }
+  
+  .news-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    /* padding:  30px; */
+height: 35vh;
+    /* border-radius: 10px; */
+    max-width: 100%;
+    /* margin: auto; */
+    text-align: center;
+  }
+  
+  h2 {
+    margin: 0 0 10px;
+  }
+  
+  .news-input {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center align input and button */
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  .news-input p {
+    margin-right: 7px; /* Add space between the paragraph and input */
+  }
+  
+  input[type="email"] {
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: black;
+  }
+  
+  .subscribe-button {
+    background-color: #3498db; /* Red background */
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .subscribe-button:hover {
+    background-color: #535353; /* Darker red on hover */
+  }
+  .two{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+.three{
+    margin-bottom: 15px;
+    text-align: left;
+    .h2{
+        font-weight: bold;
+
+    }
+   
+}
+  }
+  .ellipse{
+    position: absolute;
+left: 0;
+bottom: 0;
+top: 160px;
+    width: 3%;
+  }
+  .circle{
+    position: relative;
+  }
+  
+@media (min-width: 320px) and (max-width: 425px) {
+  .news-container {
+    /* Adjust styles for 425px screen */
+    height: auto; /* Allow container to adjust to content */
+    padding: 10px; /* Reduce padding */
+  }
+
+  .news-content {
+    padding: 10px; /* Reduce padding further */
+  }
+
+  .news-input {
+flex-direction: column;
+  }
+}
+
+@media (max-width: 425px) {
+  .news-container {
+      padding: 15px; /* Further reduce padding */
+  }
+
+  .news-content {
+      flex-direction: column; /* Stack content vertically */
+      height: auto; /* Allow height to adjust */
+  }
+
+  h2 {
+      font-size: 1.5rem; /* Smaller title size */
+  }
+
+  .news-input {
+      width: 100%; /* Full width for input */
+  }
+
+  input[type="email"] {
+      width: 100%; /* Keep input full width */
+      margin-bottom: 10px; /* Add space below input */
+  }
+
+  .subscribe-button {
+      width: 100%; /* Make button full width */
+      padding: 10px; /* Adjust padding */
+  }
+
+  .two {
+      gap: 10px; /* Reduce gap between elements */
+  }
+}
+
+@media (max-width: 320px) {
+  h2 {
+      font-size: 1.2rem; /* Further reduce title size */
+  }
+
+  .news-input p {
+      font-size: 0.9rem; /* Smaller paragraph size */
+  }
+
+  .subscribe-button {
+      padding: 8px; /* Reduce padding for smaller button */
+  }
+}

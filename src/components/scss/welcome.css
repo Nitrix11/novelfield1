@@ -1,0 +1,162 @@
+
+.welcome-section {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(135deg, #f0f8ff, #e6e6fa);
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .welcome-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    animation: slideIn 0.5s forwards;
+  }
+  
+  .welcome-text {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    opacity: 0;
+    animation: fadeInText 1.5s forwards;
+  }
+  
+  .card-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    gap: 20px; /* Adds space between cards */
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px; /* Fixed width for cards */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    position: relative; /* To enable pseudo-element effect */
+    overflow: hidden; /* To hide overflow from pseudo-elements */
+  }
+  
+  .card:hover {
+    transform: translateY(-10px) scale(1.05); /* Lift and scale effect */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  
+  .card:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(52, 152, 219, 0.1); /* Light blue overlay */
+    opacity: 0;
+    transition: opacity 0.3s;
+    border-radius: 10px; /* Match card border radius */
+  }
+  
+  .card:hover:before {
+    opacity: 1; /* Show overlay on hover */
+  }
+  
+  .card h3 {
+    margin-top: 10px;
+  }
+  
+  .card p {
+    margin-top: 5px;
+    color: #555; /* Slightly darker text for description */
+  }
+  
+  .welcome-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .welcome-button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Keyframes for animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInText {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+      .welcome-section {
+          padding: 30px; /* Reduce padding for smaller screens */
+      }
+  
+      .welcome-title {
+          font-size: 2rem; /* Smaller title size */
+      }
+  
+      .welcome-text {
+          font-size: 1rem; /* Smaller text size */
+      }
+  
+      .card-container {
+          flex-direction: column; /* Stack cards vertically */
+          align-items: center; /* Center cards */
+      }
+  
+      .card {
+          width: 90%; /* Full width on smaller screens */
+      }
+  }
+  
+  @media (max-width: 425px) {
+      .welcome-section {
+          padding: 20px; /* Further reduce padding */
+      }
+  
+      .welcome-title {
+          font-size: 1.8rem; /* Smaller title size */
+      }
+  
+      .welcome-text {
+          font-size: 0.9rem; /* Smaller text size */
+      }
+  
+      .card {
+          width: 100%; /* Full width cards */
+          margin-bottom: 15px; /* Space between cards */
+      }
+  }
+  

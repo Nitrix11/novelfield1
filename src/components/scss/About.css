@@ -1,0 +1,111 @@
+.about-section {
+    padding: 40px;
+    background-color: #f8f9fa; /* Light background color */
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+  }
+  
+  .content-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items at the top */
+    gap: 20px; /* Space between video and text */
+    margin: 20px 0; /* Margin for spacing */
+  }
+  
+  .video-container {
+    flex: 1; /* Allow the video container to grow */
+  }
+  
+  .about-video {
+    width: 100%;
+    max-width: 500px; /* Maximum width for the video */
+    height: 280px; /* Fixed height for the video */
+    border-radius: 10px;
+  }
+  
+  .text-container {
+    flex: 1; /* Allow the text container to grow */
+    text-align: left; /* Align text to the left */
+  }
+  
+  .about-text {
+    font-size: 1.2rem;
+    color: #555; /* Darker text for readability */
+    line-height: 1.5; /* Improve line spacing */
+    margin: 15px 0; /* Add spacing between paragraphs */
+  }
+  
+  .additional-text {
+    margin-top: 20px; /* Space above the additional text */
+    text-align: left; /* Align text to the left */
+  }
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .about-section {
+      padding: 30px; /* Reduce padding for smaller screens */
+  }
+
+  .about-title {
+      font-size: 2rem; /* Smaller title size */
+  }
+
+  .content-container {
+      flex-direction: column; /* Stack video and text vertically */
+      align-items: center; /* Center align content */
+  }
+
+  .video-container {
+      margin-bottom: 20px; /* Space below video */
+  }
+
+  .about-video {
+      max-width: 100%; /* Full width on smaller screens */
+      height: auto; /* Maintain aspect ratio */
+  }
+}
+
+@media (max-width: 425px) {
+  .about-section {
+      padding: 20px; /* Further reduce padding */
+  }
+
+  .about-title {
+      font-size: 1.5rem; /* Further reduce title size */
+  }
+
+  .about-text {
+      font-size: 1rem; /* Smaller text size */
+  }
+
+  .content-container {
+      gap: 10px; /* Reduce gap between video and text */
+  }
+
+  .additional-text {
+      font-size: 0.9rem; /* Smaller font for additional text */
+  }
+}
+
+@media (max-width: 320px) {
+  .about-title {
+      font-size: 1.2rem; /* Further reduce title size */
+  }
+
+  .about-text {
+      font-size: 0.9rem; /* Further reduce text size */
+  }
+
+  .subscribe-button {
+      padding: 8px; /* Reduce padding for smaller button */
+  }
+}

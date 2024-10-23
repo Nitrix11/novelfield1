@@ -1,0 +1,104 @@
+.mission-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 50px 20px;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .mission-content {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .mission-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    opacity: 0;
+    animation: slideIn 0.8s forwards;
+  }
+  
+  .mission-description {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    opacity: 0;
+    animation: fadeIn 1s 0.5s forwards;
+  }
+  
+  .mission-icons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+  }
+  
+  .icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    animation: fadeIn 1s 1s forwards;
+  }
+  
+  .icon-animation {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .icon-container:hover .icon-animation {
+    transform: scale(1.2);
+  }
+  
+  .icon-text {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #555;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .icon-container:hover .icon-text {
+    color: #3498db;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .mission-content {
+      padding: 0 20px;
+    }
+  
+    .mission-title {
+      font-size: 2rem;
+    }
+  
+    .mission-description {
+      font-size: 1rem;
+    }
+  
+    .icon-text {
+      font-size: 1rem;
+    }
+  }
