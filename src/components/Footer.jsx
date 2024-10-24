@@ -1,55 +1,55 @@
-import "./scss/footer.css"
-function Footer(){
-    return(
+// src/Footer.js
+import "./scss/footer.css";
+
+function Footer() {
+    return (
         <>
-           <footer>
-        <hr/>
-        <div class="main">
-
-            <div class="help">
-                <h2>HELP</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas saepe tempora eum cumque corrupti
-                    pariatur alias vero quod, ducimus ea modi qui tempore nam provident perspiciatis blanditiis facilis
-                    ipsa minima?</p>
-            </div>
-            <div class="shop">
-                <h2>School</h2>
-                <p>Lorem</p>
-                <p>Lorem</p>
-                <p>Lorem</p>
-                <p>Lorem</p>
-                <p>Lorem</p>
-            </div>
-            <div class="shoptacle">
-                <h2>Novelfield</h2>
-              
-                       <p>
-                       <a href="#about">About</a>
-              
-                        </p> 
-                        <p>
-                        <a href="#contact-container"> Contact</a>
+            <footer style={{ backgroundColor: "#3498db", color: "#fff", padding: "20px" }}>
+                <hr />
+                <div className="main">
+                    <div className="about">
+                        <h2>About Us</h2>
+                        <p className="flex items-center justify-center w-[60%] pb-[30px]"> 
+                          
+                            Novelfield Academy is dedicated to fostering a love for learning and academic excellence. Our experienced educators provide a supportive environment that nurtures creativity and critical thinking.
                         </p>
-                    <p>
-                    <a href="#gallery">   Gallery</a>
-                    </p>
-        
-                       
-                  
-                       
-                  
-                <p>Home</p>
-            </div>
-        </div>
-        <div class="hr">
-            <hr/>
-        </div>
-
-   
-
-    </footer>
-    <h3 className="bg-[#3498db] text-[#fff] text-center">NOVELFIELD @ All Rights Reserved</h3>
+                    </div>
+                    <div className="quick-links">
+                        <h2>Quick Links</h2>
+                        <p><a href="#home">Home</a></p>
+                        <p><a href="#about">About Us</a></p>
+                        <p><a href="#admissions">Gallery</a></p>
+                        <p><a href="#contact">Contact</a></p>
+                    </div>
+                    <div className="contact">
+                        <h2>Contact Us</h2>
+                        <p>Email: <a href="mailto:info@novelfieldacademy.com">info@novelfieldacademy.com</a></p>
+                        <p>Phone: <a href="tel:+1234567890">+123 456 7890</a></p>
+                        <p>Address: 123 Learning Lane, Knowledge City, Country</p>
+                    </div>
+                    <div className="follow-us">
+                        <h2>Follow Us</h2>
+                        <p>
+                            <a href="#facebook">Facebook</a> | 
+                            <a href="#twitter"> Twitter</a> | 
+                            <a href="#instagram"> Instagram</a> | 
+                            <a href="#linkedin"> LinkedIn</a>
+                        </p>
+                    </div>
+                </div>
+                <div className="hr">
+                    <hr />
+                </div>
+                <h3 className="text-center">
+                    © 2024 Novelfield Academy. All rights reserved.
+                </h3>
+                <p className="text-center">
+                    <a href="#privacy" style={{ color: "#fff" }}>Privacy Policy</a> | 
+                    <a href="#terms" style={{ color: "#fff" }}> Terms of Service</a>
+                </p>
+            </footer>
         </>
-    )
+    );
 }
-export default Footer
+
+export default Footer;
